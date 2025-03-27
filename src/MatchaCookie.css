@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&display=swap');
+
+body {
+  font-family: 'Caveat', cursive;
+  margin: 0;
+  padding: 0;
+  background-color: #f0fdf4; /* green-50 equivalent */
+}
+
+.recipe-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.5rem;
+  background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cstyle%3E.dots%7Bfill:%23d1fae5%7D%3C/style%3E%3Ccircle cx='10' cy='10' r='1.5' class='dots'/%3E%3C/svg%3E");
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #047857; /* green-700 equivalent */
+  margin-bottom: 1rem;
+}
+
+.ingredients-title {
+  font-size: 1.875rem;
+  font-weight: 600;
+  color: #10b981; /* green-600 equivalent */
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.servings-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.servings-label {
+  color: #374151; /* gray-700 equivalent */
+  font-size: 1.125rem;
+}
+
+.servings-range {
+  width: 100%;
+  accent-color: #10b981; /* green-500 equivalent */
+}
+
+.servings-value {
+  font-weight: 500;
+  color: #047857; /* green-700 equivalent */
+  font-size: 1.125rem;
+}
+
+.ingredients-list {
+  list-style-type: disc;
+  list-style-position: inside;
+  margin-bottom: 1.5rem;
+  font-size: 1.125rem;
+  color: #374151; /* gray-700 equivalent */
+}
+
+.steps-list {
+  list-style-type: decimal;
+  list-style-position: inside;
+  margin-top: 1.5rem;
+  color: #374151; /* gray-700 equivalent */
+  font-size: 1.125rem;
+}
+
+.step-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.step-checkbox {
+  margin-top: 0.25rem;
+  accent-color: #10b981; /* green-500 equivalent */
+}
+
+.checked-step {
+  text-decoration: line-through;
+  color: #9ca3af; /* gray-400 equivalent */
+}
+
+.completion-message {
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.cookie-icon {
+  color: #eab308; /* yellow-500 equivalent */
+  animation: bounce 1s infinite;
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-20px); }
+}

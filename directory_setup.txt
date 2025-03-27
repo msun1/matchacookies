@@ -1,0 +1,51 @@
+/my-recipe-app
+├── /public
+│   └── favicon.ico (optional)
+├── /src
+│   ├── /assets
+│   │   └── click.wav  ← (this is where you put your sound file)
+│   ├── /components
+│   │   ├── ui
+│   │   │   ├── button.jsx    ← (for custom button styles)
+│   │   │   └── card.jsx      ← (for custom card component)
+│   ├── App.jsx, index.css               ← (main app component)
+│   ├── main.jsx              ← (entry point for React)
+│   └── MatchaCookie.jsx ← (the recipe component you already have)
+├── package.json
+├── tailwind.config.js
+└── vite.config.js
+
+
+
+NOTE: to create package.json, run 'npm init -y' and it'll automatically create one
+
+files that will be automatically created:
+package.json
+tailwind.config.js
+node_modules/ folder
+
+
+======================== How to Run ========================
+1.) npm init -y    -> initialize the project
+2.) install dependencies:
+npm install react react-dom
+npm install --save-dev vite @vitejs/plugin-react
+npm install tailwindcss postcss autoprefixer
+npm install framer-motion use-sound @fontsource/caveat lucide-react classnames
+npm install tailwindcss postcss autoprefixer --save-dev
+npm install -g tailwindcss
+
+3.) config tailwind css 
+npx tailwindcss init
+
+4.) run the project:
+npm run dev 
+
+^ go to localhost:3000 to see <3
+
+
+
+NOTES:
+Run npm init -y once (when you first set up the project).
+Run npm install once (to install all dependencies).
+Run npm run dev each time you want to start your project in development mode.
